@@ -1,0 +1,24 @@
+.jumbotron {
+	height: 585px;
+	background-image: url(../img/winartopanai.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	color: white;
+}
+
+.jumbotron img {
+	margin-top: 80px;
+}
+
+.jumbotron .lead {
+	font-size: 17px;
+}
+
+.jumbotron .img-fluid {
+	width: 20%;
+}
+
+
+.about {
+	min-height: 700px;
+}
