@@ -1,0 +1,151 @@
+/*jumbotron*/
+.jumbotron {
+	height: 679px;
+	background-image: url(../img/winartopanai.jpg);
+	background-size: cover;
+	color: white;
+}
+
+.jumbotron img {
+	margin-top: 150px;
+}
+
+.jumbotron .lead {
+	font-size: 15px;
+}
+
+.jumbotron .img-fluid {
+	width: 20%;
+}
+.jumbotron .display-4 {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+@media (max-width: 576px) {
+  .jumbotron .img-fluid {
+    width: 30%;
+    margin-top: 190px;
+  }
+
+  .jumbotron .display-4 {
+    font-size: 100;
+  }
+
+}
+
+
+
+/*jumbotron*/
+
+/*about*/
+.about {
+  margin-top: -32px;
+	min-height: 675px;
+}
+.about h3 {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+
+/*portofolio*/
+/*.portofolio {
+	height: 1000px;
+}*/
+.portofolio h3 {
+  margin-top: 40px;
+}
+
+.card .list-group {
+  font-size: 15;
+}
+
+@media (max-width: 576px) {
+   section .card {
+    max-width: auto;
+    margin: 0 auto;
+  }
+}
+/*portofolio*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tinggi total: 24px, spasi antar garis: 6px */
+.custom-toggler {
+  border: none;
+  outline: none;
+  padding: 0;
+  position: relative;
+  width: 30px;
+  height: 24px;
+  z-index: 1001;
+}
+
+.toggler-icon {
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.top-bar {
+  top: 0;
+}
+.middle-bar {
+  top: 10px;
+}
+.bottom-bar {
+  bottom: 0;
+}
+
+/* Saat toggler aktif (menu terbuka) */
+.custom-toggler:not(.collapsed) .top-bar {
+  transform: rotate(45deg);
+  top: 10px;
+}
+
+.custom-toggler:not(.collapsed) .middle-bar {
+  opacity: 0;
+}
+
+.custom-toggler:not(.collapsed) .bottom-bar {
+  transform: rotate(-45deg);
+  bottom: auto;
+  top: 10px;
+}
