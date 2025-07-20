@@ -1,7 +1,7 @@
 /*jumbotron*/
 .jumbotron {
 	height: 679px;
-	background-image: url(../img/winartopanai.jpg);
+	background-image: url(winartopanai.jpg);
 	background-size: cover;
 	color: white;
 }
