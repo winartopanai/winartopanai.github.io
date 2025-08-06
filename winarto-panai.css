@@ -173,41 +173,32 @@
 
 
 
-
 .custom-toggler {
   border: none;
   outline: none;
   padding: 0;
-  position: relative;
   width: 30px;
   height: 24px;
+  position: relative;
   z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .toggler-icon {
-  position: absolute;
-  left: 0;
   height: 3px;
   width: 100%;
   background-color: white;
   border-radius: 2px;
   transition: all 0.3s ease;
+  position: relative;
 }
 
-.top-bar-winarto-panai {
-  top: 0;
-}
-.middle-bar-winarto-panai {
-  top: 10px;
-}
-.bottom-bar-winarto-panai {
-  bottom: 0;
-}
-
-
-
+/* Saat tombol aktif (menu terbuka) */
 .custom-toggler:not(.collapsed) .top-bar-winarto-panai {
   transform: rotate(45deg);
+  position: absolute;
   top: 10px;
 }
 
@@ -217,7 +208,6 @@
 
 .custom-toggler:not(.collapsed) .bottom-bar-winarto-panai {
   transform: rotate(-45deg);
-  bottom: auto;
+  position: absolute;
   top: 10px;
 }
-
