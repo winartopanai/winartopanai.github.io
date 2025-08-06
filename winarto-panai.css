@@ -1,8 +1,9 @@
 .jumbotron {
-background-image: url(winartopanai.jpg);
-background-attachment: fixed;
-background-size: cover;
-color: white;
+	height: 679px;
+	background-image: url(../img/winartopanai.jpg);
+  background-attachment: fixed;
+	background-size: cover;
+	color: white;
 }
 
 .jumbotron img {
@@ -157,7 +158,7 @@ color: white;
 
 @font-face {
   font-family: 'Poppins';
-  src: url('Poppins-Regular.ttf') format('truetype');
+  src: url('../font/Poppins-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -170,44 +171,4 @@ color: white;
 
 
 
-
-
-.custom-toggler {
-  border: none;
-  outline: none;
-  padding: 0;
-  width: 30px;
-  height: 24px;
-  position: relative;
-  z-index: 1001;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.toggler-icon {
-  height: 3px;
-  width: 100%;
-  background-color: white;
-  border-radius: 2px;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-/* Saat tombol aktif (menu terbuka) */
-.custom-toggler:not(.collapsed) .top-bar-winarto-panai {
-  transform: rotate(45deg);
-  position: absolute;
-  top: 10px;
-}
-
-.custom-toggler:not(.collapsed) .middle-bar-winarto-panai {
-  opacity: 0;
-}
-
-.custom-toggler:not(.collapsed) .bottom-bar-winarto-panai {
-  transform: rotate(-45deg);
-  position: absolute;
-  top: 10px;
-}
 
