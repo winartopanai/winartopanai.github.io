@@ -1,0 +1,222 @@
+.jumbotron {
+	height: 679px;
+	background-image: url(../img/winartopanai.jpg);
+  background-attachment: fixed;
+	background-size: cover;
+	color: white;
+}
+
+.jumbotron img {
+	margin-top: 140px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+} 
+
+.jumbotron .lead {
+	font-size: 15px;
+}
+
+.jumbotron .img-fluid {
+	width: 20%;
+}
+.jumbotron .display-4 {
+  font-size: 30px;
+  margin-top: 20px;
+}
+.jumbotron h1{
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.jumbotron .img-fluid {
+    border: 7px solid #343a40;
+
+}
+.avatar,
+.heading,
+.description {
+  opacity: 0;
+}
+
+
+
+@media (max-width: 576px) {
+  .jumbotron .img-fluid {
+    width: 40%;
+    margin-top: 190px;
+  }
+
+  .jumbotron .display-4 {
+    font-size: 100;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+
+
+/*about*/
+.about {
+	min-height: 675px;
+}
+
+.about hr {
+  width: 200px;
+  height: 4px;
+  background-color: #343a40;
+}
+.c-left, .c-right {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.8s ease-out;
+}
+
+.c-left {
+  transform: translateX(-100px);
+}
+
+.c-left.show, .c-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*portofolio*/
+.portofolio hr {
+  width: 200px;
+  height: 4px;
+  background-color: #343a40;
+}
+.portofolio .card {
+  opacity: 0;
+  transform: translate(0, -40px);
+   transition: all 0.5s ease;
+}
+.portofolio .card.muncul {
+  opacity: 1;
+  transform: translate(0,0);
+}
+
+
+
+
+
+
+
+.card .list-group {
+  font-size: 15;
+}
+
+@media (max-width: 576px) {
+   section .card {
+    max-width: auto;
+    margin: 0 auto;
+  }
+  .portofolio .card-title {
+    font-size: 15px;
+  }
+}
+/*portofolio*/
+
+
+/*
+.contact {
+  height: 650px;
+}*/
+.contact hr {
+  width: 200px;
+  height: 4px;
+  background-color: #343a40;
+}
+.contact-animasi {
+  opacity: 0;
+  transform: translateX(-100px); /* Geser ke kiri 100px */
+  transition: all 0.8s ease;
+}
+.contact-animasi.muncul {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../font/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+ body {
+  font-family: Poppins, sans-serif;
+ }
+
+
+
+
+
+
+
+
+
+.custom-toggler {
+  border: none;
+  outline: none;
+  padding: 0;
+  position: relative;
+  width: 30px;
+  height: 24px;
+  z-index: 1001;
+}
+
+.toggler-icon {
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.top-bar-winarto-panai {
+  top: 0;
+}
+.middle-bar-winarto-panai {
+  top: 10px;
+}
+.bottom-bar-winarto-panai {
+  bottom: 0;
+}
+
+
+
+.custom-toggler:not(.collapsed) .top-bar-winarto-panai {
+  transform: rotate(45deg);
+  top: 10px;
+}
+
+.custom-toggler:not(.collapsed) .middle-bar-winarto-panai {
+  opacity: 0;
+}
+
+.custom-toggler:not(.collapsed) .bottom-bar-winarto-panai {
+  transform: rotate(-45deg);
+  bottom: auto;
+  top: 10px;
+}
