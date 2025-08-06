@@ -1,22 +1,23 @@
+
 .jumbotron {
-	height: 679px;
-	background-image: url(winartopanai.jpg);
+  height: 679px;
+  background-image: url(winartopanai.jpg);
   background-attachment: fixed;
-	background-size: cover;
-	color: white;
+  background-size: cover;
+  color: white;
 }
 
 .jumbotron img {
-	margin-top: 140px;
+  margin-top: 140px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
 } 
 
 .jumbotron .lead {
-	font-size: 15px;
+  font-size: 15px;
 }
 
 .jumbotron .img-fluid {
-	width: 20%;
+  width: 20%;
 }
 .jumbotron .display-4 {
   font-size: 30px;
@@ -53,7 +54,7 @@
 
 /*about*/
 .about {
-	min-height: 675px;
+  min-height: 675px;
 }
 
 .about hr {
@@ -165,12 +166,84 @@
  body {
   font-family: Poppins, sans-serif;
  }
+.badge {
+  white-space: nowrap;       /* Jangan pisah baris, tapi bisa disesuaikan dengan overflow */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;           /* Batasi supaya gak lebih dari lebar container */
+}
+body {
+  overflow-x: hidden;
+}
+
+
+
+/* Atur behavior collapse default */
+.navbar-collapse {
+  transition: height 0.3s ease;
+}
+
+/* Perbaiki layout collapse di mobile */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #343a40;
+    padding: 1rem;
+    position: absolute;
+    top: 56px; /* tinggi navbar */
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+}
 
 
 
 
 
 
+.custom-toggler {
+  border: none;
+  outline: none;
+  padding: 0;
+  position: relative;
+  width: 30px;
+  height: 24px;
+  z-index: 1001;
+}
+
+.toggler-icon {
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.top-bar-winarto-panai {
+  top: 0;
+}
+.middle-bar-winarto-panai {
+  top: 10px;
+}
+.bottom-bar-winarto-panai {
+  bottom: 0;
+}
 
 
 
+.custom-toggler:not(.collapsed) .top-bar-winarto-panai {
+  transform: rotate(45deg);
+  top: 10px;
+}
+
+.custom-toggler:not(.collapsed) .middle-bar-winarto-panai {
+  opacity: 0;
+}
+
+.custom-toggler:not(.collapsed) .bottom-bar-winarto-panai {
+  transform: rotate(-45deg);
+  bottom: auto;
+  top: 10px;
+}
