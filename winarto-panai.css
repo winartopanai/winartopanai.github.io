@@ -1,10 +1,10 @@
-
 .jumbotron {
   height: 679px;
-  background-image: url(winartopanai.jpg);
+  background-image: url(../img/winartopanai.jpg);
   background-attachment: fixed;
   background-size: cover;
   color: white;
+  margin-top: 55px;
 }
 
 .jumbotron img {
@@ -159,42 +159,20 @@
 
 @font-face {
   font-family: 'Poppins';
-  src: url('Poppins-Regular.ttf') format('truetype');
+  src: url('../font/Poppins-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
  body {
   font-family: Poppins, sans-serif;
  }
-.badge {
-  white-space: nowrap;       /* Jangan pisah baris, tapi bisa disesuaikan dengan overflow */
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 100%;           /* Batasi supaya gak lebih dari lebar container */
-}
-body {
+ html, body {
   overflow-x: hidden;
 }
 
 
 
-/* Atur behavior collapse default */
-.navbar-collapse {
-  transition: height 0.3s ease;
-}
 
-/* Perbaiki layout collapse di mobile */
-@media (max-width: 991.98px) {
-  .navbar-collapse {
-    background-color: #343a40;
-    padding: 1rem;
-    position: absolute;
-    top: 56px; /* tinggi navbar */
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-}
 
 
 
