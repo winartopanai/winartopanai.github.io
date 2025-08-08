@@ -1,6 +1,6 @@
 .jumbotron {
   height: 679px;
-  background-image: url(../img/winartopanai.jpg);
+  background-image: url(winartopanai.jpg);
   background-attachment: fixed;
   background-size: cover;
   color: white;
@@ -225,3 +225,4 @@
   bottom: auto;
   top: 10px;
 }
+
