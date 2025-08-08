@@ -41,7 +41,7 @@
 @media (max-width: 576px) {
   .jumbotron .img-fluid {
     width: 40%;
-    margin-top: 190px;
+    margin-top: 140px;
   }
 
   .jumbotron .display-4 {
@@ -225,6 +225,7 @@
   bottom: auto;
   top: 10px;
 }
+
 
 
 
